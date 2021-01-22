@@ -1,0 +1,13 @@
+.box8 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    margin-bottom: 50px;
+    color: #000000;
+    background: #fffff;
+    border-left: solid 10px #000000;
+}
+.box8 p {
+    margin: 0;
+    padding: 0;
+}
+

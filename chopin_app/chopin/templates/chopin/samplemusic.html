@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>samplemusic</title>
+    <link href="{% static 'css/xml.css' %}" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.0"></script>
+</head>
+<body>
+    <h2>サンプルミュージック</h2>
+    <div>
+        <h4>エドヴァルド・グリーグ</h4>
+        <div class="box8">
+            <p>1843年生まれ。1907年没。ノルウェー出身の作曲家。ライプツィヒ音楽院に留学、ドイツ・ロマン派の影響を強く受けるが、帰郷してから同年輩の作曲家ノールロークに刺激され、ノルウェー国民主義に移行する。後年は演奏旅行をしながら、安定した作曲活動を送った。</p>
+        </div>
+        <img src="{% static 'assets/img/edo.jpg' %}" , width="20%"/>
+    </div>
+    <p>Four Pieces for Piano, op. 1 - III Mazurka.Con grazia</p>
+    <div class="box8">
+        <p>原曲</p>
+        <midi-player
+          src="{% static 'assets/mid/op01-3_gen.mid' %}"
+          sound-font visualizer="#myVisualizer">
+        </midi-player>
+    </div>
+    <div class="box8">
+        <p>ショパンっぽさを追加した曲</p>
+        <midi-player
+          src="{% static 'assets/mid/op01-3.mid' %}"
+          sound-font visualizer="#myVisualizer">
+        </midi-player>
+    </div>
+        <p>Peer Gynt - Suite No. 1, Op. 46 - III. Anitra's Dance</p>
+    <div class="box8">
+        <p>原曲</p>
+        <midi-player
+          src="{% static 'assets/mid/op46-3_genk.mid' %}"
+          sound-font visualizer="#myVisualizer">
+        </midi-player>
+    </div>
+    <div class="box8">
+        <p>ショパンっぽさを追加した曲</p>
+        <midi-player
+          src="{% static 'assets/mid/op46-3b.mid' %}"
+          sound-font visualizer="#myVisualizer">
+        </midi-player>
+    </div>
+    <div>
+        <h4>マリア・シマノフスカ</h4>
+        <div class="box8">
+            <p>1789年生まれ。1831年没。ポーランドの女性ピアニスト・作曲家。とりわけ1820年代において、ヨーロッパ全土で精力的な演奏旅行を行なった19世紀のポーランド人ヴィルトゥオーゾの先駆者であった。その後はサンクトペテルブルクに永住し、ロシア宮廷のために演奏活動や作曲活動、音楽教育に携わる。</p>
+        </div>
+        <img src="{% static 'assets/img/maria.jpg' %}" , width="20%"/>
+    </div>
+    <p>Minuet No. 4 from 6 Minuets for Piano</p>
+    <div class="box8">
+        <p>原曲</p>
+        <midi-player
+          src="{% static 'assets/mid/maria_gen.mid' %}"
+          sound-font visualizer="#myVisualizer">
+        </midi-player>
+    </div>
+    <div class="box8">
+        <p>ショパンっぽさを追加した曲</p>
+        <midi-player
+          src="{% static 'assets/mid/maria.mid' %}"
+          sound-font visualizer="#myVisualizer">
+        </midi-player>
+    </div>
+    <div>
+        <h4>ショパン(学習データとして利用していない曲)</h4>
+        <div class="box8">
+            <p>1810年生まれ、1849年没。ポーランドの前期ロマン派音楽を代表する作曲家。当時のヨーロッパにおいてもピアニストとして、また作曲家として有名だった。その作曲のほとんどをピアノ独奏曲が占め、ピアノの詩人とも呼ばれる。</p>
+        </div>
+        <img src="{% static 'assets/img/cho.jfif' %}" , width="20%"/>
+    </div>
+    <p>No.31 As-Dur Op.50-2</p>
+    <div class="box8">
+        <p>原曲</p>
+        <midi-player
+          src="{% static 'assets/mid/maz50-2_gen.mid' %}"
+          sound-font visualizer="#myVisualizer">
+        </midi-player>
+    </div>
+    <div class="box8">
+        <p>ショパンっぽさを追加した曲</p>
+        <midi-player
+          src="{% static 'assets/mid/maz50.mid' %}"
+          sound-font visualizer="#myVisualizer">
+        </midi-player>
+    </div>
+</body>
+</html>
