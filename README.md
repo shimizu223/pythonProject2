@@ -1,4 +1,4 @@
 # pythonProject2
 ショパンのマズルカを学習させた人工知能を扱えるWEBアプリです。言語はPythonで人工知能のフレームワークはTesorflowで、WEBアプリのフレームワークはDjangoを使用しています。
 人工知能に関する処理はpythonProject2/chopin_app/chopin/module/にあります。
-サーバーサイドの処理はpythonProject2/chopin_app/chopin/に、フロントサイドは、
+サーバーサイドの処理はpythonProject2/chopin_app/chopin/に、フロントサイドは、pythonProject2/chopin_app/chopin/templates/chopin/にあります
