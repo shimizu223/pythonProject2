@@ -1,0 +1,2 @@
+# pythonProject2
+ショパンのマズルカを学習させた人工知能を扱えるWEBアプリです。言語はPythonで人工知能のフレームワークはTesorflowで、WEBアプリのフレームワークはDjangoを使用しています。
